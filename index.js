@@ -8,23 +8,23 @@ const digitFour = document.getElementById("msTens");
 const allDigits = document.querySelectorAll(".digits");
 const body = document.querySelector("body");
 
-// Create elements
+// Create Buttons and Input
 const buttonStart = document.createElement("button");
 buttonStart.textContent = "Start Timer";
-
 const buttonReset = document.createElement("button");
 buttonReset.textContent = "Reset";
-
 const timerInputForm = document.createElement("form");
 const timerInput = document.createElement("input");
-// Style elements
+
+// Style Buttons and Input
 body.style.display = "flex";
 body.style.flexDirection = "column";
 buttonStart.style.width = "5.5rem";
 buttonReset.style.width = "5.5rem";
 buttonReset.style.margin = "10px";
 timerInputForm.textContent = "Timer Limit (<100 sec.): ";
-// Insert Button
+
+// Insert Buttons, and Input Form
 body.appendChild(buttonStart);
 body.appendChild(buttonReset);
 body.appendChild(timerInputForm);
